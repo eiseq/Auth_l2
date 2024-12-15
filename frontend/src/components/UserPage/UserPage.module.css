@@ -1,0 +1,33 @@
+.userPage {
+    min-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    color: black;
+}
+
+.userPage img {
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+body {
+    background-color: grey;
+}
+
+.userPage button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.userPage button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
