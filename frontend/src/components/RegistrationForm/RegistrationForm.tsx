@@ -73,7 +73,7 @@ const RegistrationForm: React.FC = () => {
             });
 
             setError('');
-            navigate('/');
+            navigate(`/user/${user.uid}`);
         } catch (error) {
             setError(error.message);
             setNotificationMessage(error.message);
@@ -243,6 +243,7 @@ const RegistrationForm: React.FC = () => {
                     value={formData.gender}
                     onChange={handleChange}
                     required
+                    defaultValue="male"
                 >
                     <option value="male">Мужской</option>
                     <option value="female">Женский</option>
