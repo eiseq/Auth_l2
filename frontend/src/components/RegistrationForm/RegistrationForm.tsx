@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { doc, setDoc } from 'firebase/firestore';
 import { auth, db } from '../../firebase';
@@ -275,6 +275,7 @@ const RegistrationForm: React.FC = () => {
             </div>
 
             {error && showNotification && <div className={styles.error}>{error}</div>}
+            <Link to="/login" className={styles.link}>Уже есть аккаунт? Войти</Link>
         </form>
     );
 };
